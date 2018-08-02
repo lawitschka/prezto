@@ -21,3 +21,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.exenv/bin:$PATH"
 eval "$(exenv init -)"
 
+# YouTube DL alias
+alias youtube-dl='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl'
+
