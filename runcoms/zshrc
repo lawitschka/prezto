@@ -24,3 +24,10 @@ eval "$(exenv init -)"
 # YouTube DL alias
 alias youtube-dl='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl'
 
+# Overwrite ls with lsd
+alias ls='lsd'
+
+# Use highlight instead of cat
+alias ocat=/bin/cat
+alias cat="highlight $1 --out-format xterm256 -l --force -s anotherdark"
+
